@@ -89,7 +89,7 @@ jobs:
         uses: seanmiddleditch/gha-setup-vsdevenv@v4
         
       - name: Download build artifacts
-        uses: actions/download-artifact@v3.0.0
+        uses: actions/download-artifact@v4.1.7
         with: 
           name: ${{ env.Unsigned_Artifact_Name }}
           path: ${{ env.Unsigned_Packages_Path }}
